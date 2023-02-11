@@ -32,7 +32,7 @@ jobs:
         env:
           X_MICROCMS_API_KEY: ${{ secrets.X_MICROCMS_API_KEY }}
           MICROCMS_BASE_URL: ${{ secrets.MICROCMS_BASE_URL }}
-          MD_OUTPUT_DIR: ../content/ko-techblog
+          MD_OUTPUT_DIR: ../content
 
       - name: setup hugo
         uses: peaceiris/actions-hugo@v2
