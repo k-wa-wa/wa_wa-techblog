@@ -123,7 +123,7 @@ func (blog *MicrocmsBlog) toMarkdown(filename string) error {
 }
 
 func PullMicrocmsBlogs() error {
-	os.Mkdir(MD_OUTPUT_DIR, os.ModePerm)
+	os.MkdirAll(MD_OUTPUT_DIR, os.ModePerm)
 
 	LIMIT := 10
 	offset := 0
@@ -138,6 +138,7 @@ func PullMicrocmsBlogs() error {
 		for _, blog := range blogs {
 			filename := blog.Id + ".md"
 			if err := blog.toMarkdown(filename); err != nil {
+				log.Print(err)
 				continue
 			}
 		}
