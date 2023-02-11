@@ -1,0 +1,6 @@
+content/
+public/
+resources/
+.hugo_build.lock
+
+.env*

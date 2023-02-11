@@ -1,0 +1,5 @@
+baseURL = ""
+languageCode = "ja-jp"
+title = "ko-techblog"
+
+theme = "robust"
