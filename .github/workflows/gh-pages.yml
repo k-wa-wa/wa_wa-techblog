@@ -5,6 +5,9 @@ on:
     branches:
       - master
 
+  repository_dispatch:
+    types: [update_post]
+
 permissions:
   contents: write
 
