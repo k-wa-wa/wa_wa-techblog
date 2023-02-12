@@ -1,5 +1,5 @@
-baseURL = "https://ko-he-e.github.io/ko-techblog"
+baseURL = "https://ko-he-e.github.io/wa_wa-techblog"
 languageCode = "ja-jp"
-title = "ko-techblog"
+title = "wa_wa-techblog"
 
 theme = "robust"
