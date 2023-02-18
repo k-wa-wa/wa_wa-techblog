@@ -32,7 +32,7 @@ jobs:
           cargo install mcm
           mcm export -s=zenn -t=hugo-robust --source_dir=zenn-contents
 
-          sed "s/baseURL = \"https:\/\/example.com\"/baseURL = \"https:\/\/k-wa-wa.github.io\/wa_wa-techblog\"/" config.toml > config.toml
+          sed "s/baseURL = \"https:\/\/example.com\"/baseURL = \"https:\/\/k-wa-wa.github.io\/wa_wa-techblog\/\"/" config.toml > config.toml
           mv static/ temp/
           mkdir static
           mv temp/ static/wa_wa-techblog/
