@@ -20,22 +20,21 @@ jobs:
         with:
           submodules: true
 
-      - name: set up go
-        uses: actions/setup-go@v3
+      - uses: actions-rs/toolchain@v1
         with:
-          go-version: 1.19
+          toolchain: stable
+          override: true
 
-      - name: install deps
-        run: go install
-        working-directory: ./microcms
+      - name: pull contents
+        run: |
+          git clone https://github.com/k-wa-wa/wa_wa-cms zenn-contents
 
-      - name: pull microcmsBlog & generate md files
-        run: go run .
-        working-directory: ./microcms
-        env:
-          X_MICROCMS_API_KEY: ${{ secrets.X_MICROCMS_API_KEY }}
-          MICROCMS_BASE_URL: ${{ secrets.MICROCMS_BASE_URL }}
-          MD_OUTPUT_DIR: ../content
+          cargo install mcm
+          mcm export -s=zenn -t=hugo-robust --source_dir=../zenn-contents
+
+          sed "s/baseURL = \"https:\/\/example.com\"/baseURL = \"https:\/\/k-wa-wa.github.io\/wa_wa-techblog\"/" config.toml > config.toml
+          mv static/ temp/
+          mv temp/ static/wa_wa-techblog/
 
       - name: setup hugo
         uses: peaceiris/actions-hugo@v2
