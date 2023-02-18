@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>wa_wa-techblog</title><link>https://k-wa-wa.github.io/wa_wa-techblog/</link><description>Recent content on wa_wa-techblog</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><atom:link href="https://k-wa-wa.github.io/wa_wa-techblog/index.xml" rel="self" type="application/rss+xml"/><item><title>AWS Certified Solutions Architect - Professional(SAP-C01)に滑り込み合格した！(かなり前</title><link>https://k-wa-wa.github.io/wa_wa-techblog/uf_jc3xvr8/</link><pubDate>Sun, 12 Feb 2023 14:37:15 +0000</pubDate><guid>https://k-wa-wa.github.io/wa_wa-techblog/uf_jc3xvr8/</guid><description>かなり前になりますが、AWS SAPに2022年11月12日に超滑り込みで合格したので、備忘録として(今更)、やったことなどをまとめておきます。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title/><link>/</link><description>Recent content on</description><generator>Hugo -- gohugo.io</generator><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/readme/</guid><description>Zenn投稿用レポジトリ https://zenn.dev/wa__wa
+Markdown Contents Manager (mcm)によって、自作ブログなどにも展開していく(予定</description></item><item><title>AWS Certified Solutions Architect - Professional(SAP-C01)に滑り込み合格！(かなり前</title><link>/001_aws-sap-c01/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/001_aws-sap-c01/</guid><description>かなり前になりますが、AWS SAPに2022年11月12日に超滑り込みで合格したので、備忘録として(今更)、やったことなどをまとめておきます。
 経緯 ※認定試験として、Cloud Practitioner・SAA・SAPが登場します。ご存知の方もいらっしゃると思いますが、軽く解説しておきます。(詳細は こちら
 Cloud Practitioner：Foundation(基礎)レベルの試験。
 SAA(Solutions Architect Professional)：Cloud Practitionerの上位レベルの試験。
@@ -25,7 +26,7 @@ SAP(Solutions Architect Professional)：SAAの上位レベルの試験。2年以
 スケジュール 試験日は旧試験(SAP-C01)終了ギリギリ前の11月12日。受験を決めたのは約1ヶ月前でした。
 SAAの知識ですら多少怪しかったため、基礎固めから始めました。
 1週間目 参考書( AWS認定資格試験テキスト AWS認定 ソリューションアーキテクト-アソシエイト )をひたすら読んでSAAの基礎を固める。 2週間目 参考書( AWS認定資格試験テキスト&amp;amp;問題集 AWS認定ソリューションアーキテクト-プロフェッショナル )を読んでインプット。 Udemy( AWS 認定ソリューションアーキテクト プロフェッショナル模擬試験問題集（全5回分375問） )を解き始め、絶望を味わう。 3,4週目 Black Beltを片っ端から読んで知識を補強。 Udemyを解き続ける。 学習時間としては、平日は平均2時間ほど、土日は日によって4-10時間くらいは勉強しました。
-教材について AWS認定資格試験テキスト&amp;amp;問題集 AWS認定ソリューションアーキテクト-プロフェッショナル 基礎固めにはいいと思います。バランスがいい。 Black Belt 知識の補強にはもってこいです。参考書では得られない知識をユースケースなど交えて学習できるので、定着度が違います。ただ、基礎がない段階で読むのは辛いかも。。 AWS 認定ソリューションアーキテクト プロフェッショナル模擬試験問題集（全5回分375問） 普通に解くと、全問終わるまで解説が見られず、効率が悪いです。一度何も答えずに即試験を終了して、解説を開きながら別ウィンドウで再度試験を開始し、1問ずつ解く→解説を読む→メモにまとめる、といったことを行なっていました。 正直、悪問が多い気がします。。(細かすぎる、誤字が多い、日本語がよくわからない、解説が解説になっていない) ただ、Udemyでは唯一の日本語問題集なので、これらの点を理解して上手に利用すればいい教材になります。 学習時に気をつけた点 可用性・コスト・セキュリティなどクラウドの利点であり基本を常に意識する Active DirectoryやDirect Connectなど日常で触れない(=覚えづらい)分野は、Black Belt、DevelopersIO、Zennなどとりあえずたくさん読んでみて理解する ユースケースなどの違いを覚えるといいです サービスの利点や制約を自分で説明できるようになりましょう 問題を解く際に気をつけた点 問題文の最後の1分を最初に読む 問題文が長く、かなり枝葉も多いため、何を求められているのか(可用性なのかコストなのかパフォーマンスなのか)を強く意識して、選択肢を読むのに不要な箇所を読み飛ばしました。 選択肢の違いに着目する かなり似た選択肢があることがあります。その際は2つを同時に読み、違う箇所のみ見つけて、選択肢をできるだけ早く切り捨てることを意識しました。 困ったら英語にしてみる これはかなり大事かもしれません。本番でちょっとした表現の差しかなく、正解を選べない問題がありました。が、英語に切り替えてみると実は意味が真逆、なんてことがありました。(覚えてないですが、toとfromが違うとかそんなレベルでした。。 まとめ 旧試験が終了してだいぶ経ってからのまとめとなってしまいました。。</description></item><item><title>Hugo(+Robust) × MicroCMS × Github Pagesでサクッと静的Webサイトを作る！</title><link>https://k-wa-wa.github.io/wa_wa-techblog/xdi810pll/</link><pubDate>Sun, 12 Feb 2023 07:15:53 +0000</pubDate><guid>https://k-wa-wa.github.io/wa_wa-techblog/xdi810pll/</guid><description>はじめに 最近は寒くなったり暖かくなったり忙しいですね。
+教材について AWS認定資格試験テキスト&amp;amp;問題集 AWS認定ソリューションアーキテクト-プロフェッショナル 基礎固めにはいいと思います。バランスがいい。 Black Belt 知識の補強にはもってこいです。参考書では得られない知識をユースケースなど交えて学習できるので、定着度が違います。ただ、基礎がない段階で読むのは辛いかも。。 AWS 認定ソリューションアーキテクト プロフェッショナル模擬試験問題集（全5回分375問） 普通に解くと、全問終わるまで解説が見られず、効率が悪いです。一度何も答えずに即試験を終了して、解説を開きながら別ウィンドウで再度試験を開始し、1問ずつ解く→解説を読む→メモにまとめる、といったことを行なっていました。 正直、悪問が多い気がします。。(細かすぎる、誤字が多い、日本語がよくわからない、解説が解説になっていない) ただ、Udemyでは唯一の日本語問題集なので、これらの点を理解して上手に利用すればいい教材になります。 学習時に気をつけた点 可用性・コスト・セキュリティなどクラウドの利点であり基本を常に意識する Active DirectoryやDirect Connectなど日常で触れない(=覚えづらい)分野は、Black Belt、DevelopersIO、Zennなどとりあえずたくさん読んでみて理解する ユースケースなどの違いを覚えるといいです サービスの利点や制約を自分で説明できるようになりましょう 問題を解く際に気をつけた点 問題文の最後の1分を最初に読む 問題文が長く、かなり枝葉も多いため、何を求められているのか(可用性なのかコストなのかパフォーマンスなのか)を強く意識して、選択肢を読むのに不要な箇所を読み飛ばしました。 選択肢の違いに着目する かなり似た選択肢があることがあります。その際は2つを同時に読み、違う箇所のみ見つけて、選択肢をできるだけ早く切り捨てることを意識しました。 困ったら英語にしてみる これはかなり大事かもしれません。本番でちょっとした表現の差しかなく、正解を選べない問題がありました。が、英語に切り替えてみると実は意味が真逆、なんてことがありました。(覚えてないですが、toとfromが違うとかそんなレベルでした。。 まとめ 旧試験が終了してだいぶ経ってからのまとめとなってしまいました。。</description></item><item><title>Hugo(+Robust) × MicroCMS × Github Pagesでサクッと静的Webサイト構築！</title><link>/002_hugo-microcms-ghpages/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/002_hugo-microcms-ghpages/</guid><description>はじめに 最近は寒くなったり暖かくなったり忙しいですね。
 今回はやっと重い腰を上げ、ポートフォリオサイトを作ろうかなと思ったのですが。。
 わざわざ色々なページを作り込まなくても、ブログ記事だけサクッと手っ取り早く公開できないかなぁと思いたち、Markdownをレンダリングできる静的サイトジェネレーターを探してホスティングまでしてみました。
 使用技術 Hugo https://gohugo.io/
@@ -50,17 +51,4 @@ Github Pages https://docs.github.com/ja/pages
 Macではbrewで一発でした。
 brew install hugo クイックスタート にあるように進めていきます。
 hubo new site sample cd sample テーマの追加を行います。公式にあるようにsubmoduleを使用しておきましょう。
-# サブモジュールを使用するために、gitの初期化が必要 git init # themes/以下に配置 git submodule add https://github.com/dim0627/hugo_theme_robust themes/robust テーマの追加ができたので、Hugoにどのテーマを使用するかを教えてあげるため、configファイルに追記しましょう。(コマンドではなく、ファイルを開いて追記しても大丈夫です)</description></item><item><title>ブログテンプレートから作成されました</title><link>https://k-wa-wa.github.io/wa_wa-techblog/5wfms8qbb4h/</link><pubDate>Thu, 09 Feb 2023 08:10:25 +0000</pubDate><guid>https://k-wa-wa.github.io/wa_wa-techblog/5wfms8qbb4h/</guid><description>みだし1 ブログテンプレートから作成されました🎉 ブログテンプレートからAPIを作成しました。
-おつかれさまでした🎉
-APIプレビューを試そう🚀 最初に「APIプレビュー」をしてみましょう。
-入稿したコンテンツはAPI経由で取得し、Viewに繋ぎ込みます。
-APIプレビューでは実際のAPIレスポンスを確認でき、あなたの開発を加速させます。
-👇まずはここをクリックします。
-APIプレビュー画面が開いたら、 「取得」 ボタンでリクエストを試してみましょう。
-この記事の内容がAPIで取得できていることがわかります。
-みだし1 次にやること🏃 APIプレビューで確認したレスポンスを参考に、あなた自身のWebサイトを構築しましょう。
-microCMSはAPIでコンテンツを取得するため、お好きな言語・フレームワークで画面を構築できます。
-JavaScript SDK Nuxt SDK Gatsby SDK その他に サーバーサイドSDK（PHP / Go / Ruby）やモバイルSDK（iOS / Android） もございます。
-3も作っておく お困りなことや疑問点などございましたらお気軽にご連絡ください。
-サポート窓口： support@microcms.io
-よくある質問： https://help.microcms.io/ja/knowledge</description></item></channel></rss>
+# サブモジュールを使用するために、gitの初期化が必要 git init # themes/以下に配置 git submodule add https://github.com/dim0627/hugo_theme_robust themes/robust テーマの追加ができたので、Hugoにどのテーマを使用するかを教えてあげるため、configファイルに追記しましょう。(コマンドではなく、ファイルを開いて追記しても大丈夫です)</description></item></channel></rss>
