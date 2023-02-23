@@ -20,11 +20,6 @@ jobs:
         with:
           submodules: true
 
-      - uses: actions-rs/toolchain@v1
-        with:
-          toolchain: stable
-          override: true
-
       - name: pull contents
         run: |
           git clone https://github.com/k-wa-wa/wa_wa-cms zenn-contents
